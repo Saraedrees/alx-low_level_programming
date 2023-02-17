@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	double n;
-	scanf("%lf", &n);
+	float n;
+	scanf("%f", &n);
 	if (n > 0)
 	{
-		printf("%lf is positive\n", n);
+		printf("%f is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%lf is zero\n", n);
+		printf("%f is zero\n", n);
 	}
 	else
 	{
-		printf("%lf is negative\n", n);
+		printf("%f is negative\n", n);
 	}
 	return (0);
 }
