@@ -7,7 +7,7 @@
 int main(void)
 {
 	double n;
-
+	scanf("%lf", &n);
 	if (n > 0)
 	{
 		printf("%lf is positive\n", n);
