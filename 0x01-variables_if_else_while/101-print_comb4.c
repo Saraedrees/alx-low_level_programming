@@ -11,19 +11,19 @@
 
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int a, b, c;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (a = 0; a < 8; a++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (b = a + 1; b < 9; b++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (c = b + 1; c < 10; c++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
 
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+				if (a == 7 && b == 8 && c == 9)
 					continue;
 				
 				putchar(',');
@@ -36,4 +36,3 @@ int main(void)
 
 	return (0);
 }
-
