@@ -3,24 +3,33 @@
 #include <stdio.h>
 
 /**
- * main - print all combinations of single-digit numbers
+ * main - print all combinations of three digit numbers
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-        int num;
+        int a, b, c;
 
-        for (num = 0; num < 10; num++)
+        for (a = 0; a < 8; a++)
         {
-                putchar((num % 10) + '0');
-                if ((num % 10) < 9)
-                {
-                putchar(',');
-                putchar(' ');
-                }
-        }
-        putchar('\n');
-        return (0);
+		for (b = a + 1; b < 9; b++)
+		{
+			for (c = b + 1; c < 10; c++)
+			{
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
+				
+				if (a == 7 && b == 8 && c == 9)
+					contiune;
+				
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		putchar('\n');
+		return (0);
+	}
 }
