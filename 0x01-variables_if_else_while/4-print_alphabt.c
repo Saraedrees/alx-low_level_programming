@@ -14,7 +14,7 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		while (c = 'e' || c = 'q')
+		while (c = 'e') || (c = 'q')
 		{
 			c = c + 1;
 		}
