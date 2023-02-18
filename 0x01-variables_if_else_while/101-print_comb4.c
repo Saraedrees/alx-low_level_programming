@@ -25,7 +25,6 @@ int main(void)
 
 				if (a == 7 && b == 8 && c == 9)
 					continue;
-				
 				putchar(',');
 				putchar(' ');
 			}
@@ -33,6 +32,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
