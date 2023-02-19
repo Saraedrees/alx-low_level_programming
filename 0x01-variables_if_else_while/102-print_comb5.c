@@ -14,7 +14,7 @@ int main(void)
 {
 	int a, b;
 
-	for (int a = 0; a < 99; a++)
+	for (a = 0; a < 99; a++)
 	{
 		for (b = a + 1; b < 100; b++)
 		{
