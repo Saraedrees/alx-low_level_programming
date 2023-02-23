@@ -2,26 +2,18 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: @r: number to be checked
- * Return: 0 (Success)
+ * @n: number to be checked
+ * Return: the absolute value of the integer. 
  */
 
 int _abs(int n)
 {
-	int r;
-
 	if (n < 0)
 	{
-		r = $((n * -1));
-		_putchar(r);
+		return (-n);
 	}
-	else if (n == 0)
+	else
 	{
-		_putchar(n);
+		return (n);
 	}
-	else if (n > 0)
-	{
-		_putchar(n);
-	}
-		return (0);
 }
