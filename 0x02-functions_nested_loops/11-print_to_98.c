@@ -10,11 +10,8 @@
 
 void print_to_98(int n)
 {
-	int a = 98;
-
 	_putchar(n);
 	_putchar(',');
 	_putchar(' ');
-	_putchar(a);
 	_putchar('\n');
 }
