@@ -20,11 +20,11 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar((b / 10) + '0');
 			_putchar((b % 10) + '0');
-		
+
 			if (a == 23 && b == 59)
 				continue;
 			_putchar('\n');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
