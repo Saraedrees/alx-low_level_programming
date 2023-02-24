@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - function to add two integers and returns the result.
+ * add - adds two integers.
  * @a: number to be calculated
  * @b: number to be calculated
  *
@@ -10,5 +10,5 @@
 
 int add(int a, int b)
 {
-	return(a + b);
+	return (a + b);
 }
