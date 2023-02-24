@@ -4,7 +4,7 @@
  * print_numbers - print numbers, from 0 to 9,
  * followed by a new line.
  *
- * Return: printed number.
+ * Return - no return.
  */
 
 void print_numbers(void)
@@ -16,5 +16,4 @@ void print_numbers(void)
 		_putchar('a');
 		_putchar('\n');
 	}
-		return (a);
 }
