@@ -1,2 +1,2 @@
 #!/bin/bash
-#This is the first c project.
+# this is the first C project.
