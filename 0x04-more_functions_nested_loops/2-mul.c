@@ -5,16 +5,11 @@
  * @a: integer to be multiplied
  * @b: integer to be multiplied
  *
- * Return: 0 (Success)
+ * Return: multiplied value (Success)
  *
  */
 
 int mul(int a, int b)
 {
-	int r;
-
-	r = a * b;
-
-	_putchar(r);
-	return (0);
+	return (a * b);
 }
