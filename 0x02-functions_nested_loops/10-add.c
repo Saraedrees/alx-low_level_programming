@@ -7,7 +7,6 @@
  *
  * Return - add of number 1 and 2.
  */
-
 int add(int a, int b)
 {
 	return (a + b);
