@@ -18,20 +18,21 @@ int main(void)
 	{
 		if (n % 3 == 0)
 		{
-			printf("Fizz \n");
+			printf("Fizz ");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("Buzz \n");
+			printf("Buzz ");
 		}
 		else if (n % 15 == 0)
 		{
-			printf("FizzBuzz \n");
+			printf("FizzBuzz ");
 		}
 		else
 		{
-			printf("%d \n", n);
+			printf("%d ", n);
 		}
+	printf("\n");
 	return (0);
 	}
 }
