@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	long unsigned int n1, n2, sum;
+	unsigned long int n1, n2, sum;
 	int i;
 
 	n1 = 0;
