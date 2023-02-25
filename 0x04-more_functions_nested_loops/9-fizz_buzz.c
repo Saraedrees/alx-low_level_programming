@@ -24,7 +24,7 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
-		else if (n == 0)
+		else if (n == 100)
 		{
 			printf("Buzz");
 		}
@@ -32,7 +32,7 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if
+		else
 		{
 			printf("%d ", n);
 		}
