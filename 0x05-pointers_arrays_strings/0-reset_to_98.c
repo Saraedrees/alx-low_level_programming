@@ -12,9 +12,9 @@ void reset_to_98(int *n)
 
 	i = 402;
 	n = &i;
-	_putchar('i');
+	_putchar((i % 10) + '0');
 	_putchar('\n');
 	*n = 98;
-	_putchar('i');
+	_putchar((i % 10) + '0');
 	_putchar('\n');
 }
