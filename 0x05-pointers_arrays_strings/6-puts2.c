@@ -18,7 +18,7 @@ void puts2(char *str)
 		{
 			break;
 		}
-		else if ((*(str + i)) / 2 !== 0)
+		else if ((*(str + i)) / 2 != 0)
 		{
 			_putchar(str[i]);
 		}
