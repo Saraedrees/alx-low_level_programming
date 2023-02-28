@@ -8,14 +8,16 @@
  */
 void print_rev(char *s)
 {
-	int len = 0, index = 0;
-	char tmp;
+	int count = 0;
 
-		for (index = len - 1; index >= len / 2; index--)
-		{
-			tmp = s[index];
-			s[index] = s[len - index - 1];
-			s[len - index - 1] = tmp;
-			_putchar(s[index]);
-		}
+	while (count >= 0)
+	{
+		if (s[count] == '\0')
+			break;
+		count++;
+	}
+
+	for (count--; count >= 0; count--)
+		_putchar(s[count]);
+	_putchar('\n');
 }
