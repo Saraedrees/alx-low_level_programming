@@ -18,13 +18,9 @@ void puts2(char *str)
 		{
 			break;
 		}
-		else if ((*(str + i)) / 2 != 0)
+		for (i = i + 2; i < '\0'; i++)
 		{
 			_putchar(str[i]);
-		}
-		else
-		{
-			i++;
 		}
 	}
 }
