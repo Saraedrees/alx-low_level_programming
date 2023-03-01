@@ -5,6 +5,7 @@
  * print the second half of the string.
  * If the number of characters is odd, print the last n characters
  * of the string, where n = (length_of_the_string - 1) / 2
+ * @str: string to be printed.
  *
  * Return: void.
  */
