@@ -13,7 +13,7 @@ int _atoi(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		n = s[i];
-		if ((n % 2 == 0) || (n % 2 == 1))
+		if ((n >= '0') || (n <= '9'))
 			return (n);
 	}
 }
