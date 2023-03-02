@@ -4,8 +4,7 @@
  * _atoi - convert a string to an integer.
  * @s: string to be checked
  *
- * Return: 0 (if there are no number in the string),
- * and number (if number is found)
+ * Return: number (if number is found)
  */
 int _atoi(char *s)
 {
@@ -16,6 +15,5 @@ int _atoi(char *s)
 		n = s[i];
 		if ((n % 2 == 0) || (n % 2 == 1))
 			return (n);
-		return (0);
 	}
 }
