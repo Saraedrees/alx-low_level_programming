@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - function print a triangle.
- * @size: size of triangle.
+ * @size: number of lines of triangle.
  *
  * Return: no return.
  */
@@ -11,17 +11,14 @@ void print_triangle(int size)
 {
 	int tria, i;
 
-	if (size > 0)
+	for (tria = 0; tria < size; tria++)
 	{
-		for (tria = 0; tria < size; tria++)
-		{
-			for (i = 0; i < size; i++)
-			{
-				_putchar(' ');
-			}
+		for (i = 1; i < (size - 1); i++)
+			_putchar(' ');
+		for (i--; i < size; i++)
 			_putchar('#');
+		if (tria < (size - 1))
 			_putchar('\n');
-		}
 	}
 	_putchar('\n');
 }
