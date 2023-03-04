@@ -3,7 +3,7 @@
 /**
  * string_toupper - function that changes all lowercase letters,
  * of a string to uppercase.
- * @str: string to be checked.
+ * @str: input string to be checked.
  *
  * Return: printed modified string.
  */
@@ -11,10 +11,11 @@ char *string_toupper(char *str)
 {
 	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if ((str[i] >= 97) && (str[i] <= 122))
 		       str[i] = str[i] - 32;
+		i++;
 	}
 	return (str);
 }
