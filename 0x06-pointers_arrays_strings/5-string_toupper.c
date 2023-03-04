@@ -3,7 +3,7 @@
 /**
  * string_toupper - function that changes all lowercase letters,
  * of a string to uppercase.
- * @str: input string to be checked.
+ * @s: input string to be checked.
  *
  * Return: printed modified string.
  */
