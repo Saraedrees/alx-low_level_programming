@@ -10,8 +10,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	unsigned int i, j;
-	int a[i][j];
+	int i, j;
 	unsigned int diag1_sum = 0;
 	unsigned int diag2_sum = 0;
 
