@@ -1,2 +1,2 @@
 #!/bin/bash
-ar rc liball.a *.c/0x09-static_libraries/
+ar rc liball.a /0x09-static_libraries/*.c
