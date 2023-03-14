@@ -6,7 +6,7 @@
  * @argc: number of command line arguments
  * @argv: arary that contains command line arguments
  *
- * Return: 0 (Success), and 1 if not two arguments and print "ERROR".
+ * Return: 0 (Success), and 1 if not two arguments and print "Error".
  */
 int main(int argc, char *argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 	}
 	n1 = atoi(argv[1]);
