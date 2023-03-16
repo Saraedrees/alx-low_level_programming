@@ -3,7 +3,7 @@
 
 /**
  * malloc_checked - function that allocates memory using malloc.
- * @b: number of bytes to be allocated. 
+ * @b: number of bytes to be allocated.
  *
  * Return: pointer to the allocated memory,
  * if malloc fails; the "malloc_checked" should cause normal process
@@ -11,7 +11,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *s = malloc(b);
+	void *s = malloc(b);/*same as char *s then equation*/
 
 	if (s == NULL)
 		exit(98);
