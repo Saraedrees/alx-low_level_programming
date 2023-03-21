@@ -28,7 +28,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ptr_dog->name = malloc(l_name + 1);
 	ptr_dog->owner = malloc(l_owner + 1);
 
-	if ((ptr_dog->name != '\0') || (ptr_dog->owner != '\0'))
+	if (!(ptr_dog->name) || !(ptr_dog->owner))
 	{
 		free(ptr_dog->name);
 		free(ptr_dog->owner);
@@ -46,5 +46,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 		ptr_dog->owner[i] = owner[i];
 	ptr_dog->owner[i] = '\0';
 
-	return (new_dog);
+	return (ptr_dog);
 }
