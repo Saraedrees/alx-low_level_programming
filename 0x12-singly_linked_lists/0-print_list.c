@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print-list - function that prints all the elements of a list_t list.
+ * print_list - function that prints all the elements of a list_t list.
  * @h: pointer to the the list_t list to print.
  *
  * Return: the number of nodes in h.
