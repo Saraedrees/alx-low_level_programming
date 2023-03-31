@@ -2,7 +2,7 @@ section .data
     msg db "Hello world!",10      ; 10 is the ASCII code for a new line (LF)
 
 section .text
-    global _start
+    global main
 
 main:
     mov rax, 1
