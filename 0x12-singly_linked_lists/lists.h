@@ -1,5 +1,5 @@
-#ifndef _LISTS_H_
-#define _LISIS_H_
+#ifndef LISTS_H
+#define LISIS_H
 
 #include <stdlib.h>
 
