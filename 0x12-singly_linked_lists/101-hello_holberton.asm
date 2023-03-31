@@ -4,7 +4,7 @@ section .data
 section .text
     global _start
 
-_start:
+main:
     mov rax, 1
     mov rdi, 1
     mov rsi, msg
@@ -14,13 +14,3 @@ _start:
     mov rax, 60
     mov rdi, 0
     syscall
-    
-#include <unistd.h>
-
-#define STDOUT 1
-
-int main()
-{
-    write(STDOUT, "Hello world!\n", 13);
-    _exit(0);
-}
