@@ -73,7 +73,7 @@ void print_string(va_list args)
  */
 void print_all(const char * const format, ...)
 {
-	int i, j;
+	int i = 0, j = 0;
 	char *separator = "";
 	va_list args;
 	printer_t funcs[] = {
@@ -83,7 +83,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	for (i = 0; format && format[i]; i++)
+	while (format && format[i])
 	{
 		j = 0;
 
@@ -96,6 +96,7 @@ void print_all(const char * const format, ...)
 			funcs[j].print(args);
 			separator = ",";
 		}
+		i++;
 	}
 	printf("\n");
 	va_end(args);
