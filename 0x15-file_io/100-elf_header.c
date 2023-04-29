@@ -78,7 +78,7 @@ void prnt_data(unsigned char *e_id)
 {
 	printf("  Data:                              ");
 
-	switch (e_ident[EI_DATA])
+	switch (e_id[EI_DATA])
 	{
 	case ELFDATANONE:
 		printf("none\n");
