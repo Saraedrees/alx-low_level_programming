@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * check_elf - Checks if a file is an ELF file.
- * @e_ident: A pointer to an array containing the ELF magic numbers.
+ * chck_elf - func check if the file is an ELF file.
+ * @e_id: pointer to an array containing the ELF magic numbers.
  *
- * Description: If the file is not an ELF file - exit code 98.
+ * exit code 98: if the file is not an ELF file.
  */
-void check_elf(unsigned char *e_ident)
+void chck_elf(unsigned char *e_id)
 {
-	int index;
+	int i;
 
-	for (index = 0; index < 4; index++)
+	for (i = 0; i < 4; i++)
 	{
-		if (e_ident[index] != 127 &&
-		    e_ident[index] != 'E' &&
-		    e_ident[index] != 'L' &&
-		    e_ident[index] != 'F')
+		if (e_id[i] != 127 &&
+		    e_id[i] != 'E' &&
+		    e_id[i] != 'L' &&
+		    e_id[i] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -24,20 +24,20 @@ void check_elf(unsigned char *e_ident)
 }
 
 /**
- * print_magic - Prints the magic numbers of an ELF header.
- * @e_ident: A pointer to an array containing the ELF magic numbers.
+ * prnt_magic - func print magic numbers of an ELF header.
+ * @e_id: pointer to an array containing the ELF magic numbers.
  *
- * Description: Magic numbers are separated by spaces.
+ * Magic numbers are separated by spaces.
  */
-void print_magic(unsigned char *e_ident)
+void prnt_magic(unsigned char *e_id)
 {
-	int index;
+	int i;
 
 	printf("  Magic:   ");
 
-	for (index = 0; index < EI_NIDENT; index++)
+	for (i = 0; i < EI_NIDENT; i++)
 	{
-		printf("%02x", e_ident[index]);
+		printf("%02x", e_id[i]);
 
 		if (index == EI_NIDENT - 1)
 			printf("\n");
@@ -47,7 +47,7 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Prints the class of an ELF header.
+ * prnt_class - func print class of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_class(unsigned char *e_ident)
