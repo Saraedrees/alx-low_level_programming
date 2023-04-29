@@ -251,7 +251,7 @@ void close_elf(int elf)
  * exit code 98 : if the file is not an ELF File
  * or the function fails.
  */
-int main(int __attribute__((__unused__)) ac, char *argv[])
+int main(int __attribute__((__unused__)) ac, char *av[])
 {
 	Elf64_Ehdr *header;
 	int o, r;
@@ -279,7 +279,7 @@ int main(int __attribute__((__unused__)) ac, char *argv[])
 	}
 
 	chck_elf(header->e_id);
-	prntf("ELF Header:\n");
+	printf("ELF Header:\n");
 	prnt_magic(header->e_id);
 	prnt_class(header->e_id);
 	prnt_data(header->e_id);
